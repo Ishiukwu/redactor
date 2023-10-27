@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redact Js</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Text Redaction</h2>
+        <div class="text-redact">
+            <label for="sentence">Enter a sentence: </label>
+            <textarea name="" id="sentence" cols="50" rows="3"></textarea>
+        </div>
+        
+        <div class="redact-word">
+        <label for="redact">Enter the words you wish to redact,seperated by a comma(,): </label>
+        <textarea name="" id="redact" cols="25" rows="2"></textarea>
+
+        </div>
+        
+        <button onclick="redactSentence()">Redact Now</button>    
+        
+    </div>
+        <p id="redact-content"></p>
+ 
+    <script src="main.js">
+    </script>
+</body>
+</html>
